@@ -1,43 +1,189 @@
+html
+Копировать
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Самые дорогие вещи в мире</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>План на день</title>
     <style>
-        /* Стили для всей страницы */
+        /* Общие стили */
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* Горизонтальное центрирование */
-            align-items: center;     /* Вертикальное центрирование */
-            min-height: 100vh;       /* Высота на весь экран */
-            background-color: #f0f4f8; /* Цвет фона */
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px;
         }
-
-        /* Стили для контейнера с надписью */
-        .container {
-            text-align: center;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Стили для самой надписи */
         h1 {
-            font-size: 3.5rem; /* Размер шрифта */
-            color: #2c3e50;    /* Темно-синий цвет текста */
-            margin: 0;
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background: #ecf0f1;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        li:hover {
+            transform: translateX(10px);
+            background: #dfe6ed;
+        }
+        .item-name {
             font-weight: bold;
+            font-size: 1.1rem;
+            color: #2980b9;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            min-width: 120px; /* Выравнивание цен по правому краю */
+            text-align: right;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            li {
+                flex-direction: column;
+                text-align: center;
+            }
+            .price {
+                min-width: auto;
+                margin-top: 8px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>ПЛАН НА ДЕНЬ</h1>
-    </div>
+
+<div class="container">
+    <h1>ТОП самых дорогих вещей в мире</h1>
+
+    <ul>
+        <!-- 1 -->
+        <li>
+            <span class="item-name">Антиматерия</span>
+            <span class="price">$62,5 триллиона за грамм</span>
+        </li>
+        <!-- 2 -->
+        <li>
+            <span class="item-name">Яхта History Supreme</span>
+            <span class="price">$4,5 млрд</span>
+        </li>
+        <!-- 3 -->
+        <li>
+            <span class="item-name">Небоскреб Антилия</span>
+            <span class="price">$2 млрд</span>
+        </li>
+        <!-- 4 -->
+        <li>
+            <span class="item-name">Вилла Леопольда</span>
+            <span class="price">$506 млн</span>
+        </li>
+        <!-- 5 -->
+        <li>
+            <span class="item-name">Картина "Спаситель мира"</span>
+            <span class="price">$450,3 млн</span>
+        </li>
+        <!-- 6 -->
+        <li>
+            <span class="item-name">Лошадь Фрэнкель</span>
+            <span class="price">$200 млн</span>
+        </li>
+        <!-- 7 -->
+        <li>
+            <span class="item-name">Поместье Джеффа Безоса</span>
+            <span class="price">$165 млн</span>
+        </li>
+        <!-- 8 -->
+        <li>
+            <span class="item-name">Картина "Портрет Адели Блох-Бауэр I"</span>
+            <span class="price">$135 млн</span>
+        </li>
+        <!-- 9 -->
+        <li>
+            <span class="item-name">Часы Graff Diamonds Hallucination</span>
+            <span class="price">$55 млн</span>
+        </li>
+        <!-- 10 -->
+        <li>
+            <span class="item-name">Автомобиль Ferrari 250 GTO</span>
+            <span class="price">$51,7 млн</span>
+        </li>
+        <!-- 11 -->
+        <li>
+            <span class="item-name">iPhone Falcon SuperNova Pink Diamond</span>
+            <span class="price">$48,5 млн</span>
+        </li>
+        <!-- 12 -->
+        <li>
+            <span class="item-name">Ликер D’Amalfi Limoncello Supreme</span>
+            <span class="price">$43,8 млн</span>
+        </li>
+        <!-- 13 -->
+        <li>
+            <span class="item-name">Купальник из алмазов</span>
+            <span class="price">$30 млн</span>
+        </li>
+        <!-- 14 -->
+        <li>
+            <span class="item-name">Розовый алмаз</span>
+            <span class="price">$23 млн</span>
+        </li>
+        <!-- 15 -->
+        <li>
+            <span class="item-name">Номерной знак "1"</span>
+            <span class="price">$15 млн</span>
+        </li>
+        <!-- 16 -->
+        <li>
+            <span class="item-name">Яд скорпиона</span>
+            <span class="price">$10 млн/л</span>
+        </li>
+        <!-- 17 -->
+        <li>
+            <span class="item-name">Акула в формальдегиде</span>
+            <span class="price">$8 млн</span>
+        </li>
+        <!-- 18 -->
+        <li>
+            <span class="item-name">Парящая кровать</span>
+            <span class="price">$1,6 млн</span>
+        </li>
+        <!-- 19 -->
+        <li>
+            <span class="item-name">Десерт с золотом и бриллиантом</span>
+            <span class="price">$35 тыс.</span>
+        </li>
+    </ul>
+
+    <footer>
+        Данные собраны на основе открытых источников.
+    </footer>
+</div>
+
 </body>
 </html>
